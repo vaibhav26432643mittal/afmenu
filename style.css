@@ -1,0 +1,271 @@
+*{
+    margin: 0;
+    padding: 0;
+    color:#1D71B8;
+    font-family: Montserrat,Arial, Helvetica, sans-serif;
+    
+    
+}
+#topmenu{
+    float: right;
+    padding: 30px 30px 0px;
+}
+#topmenu a{
+    text-decoration: none;
+    font-weight: bold;
+    margin: 0px 10px 0px 0px;
+    font-size: 11px;
+}
+#logos{
+    margin-right: 100px;
+    
+}
+#logos i{
+    margin:0px 1px;
+}
+.access{
+    font-size: 30px;
+    margin-left: 25px;
+}
+#access{
+    float: right;
+    background-color: transparent;
+    margin-right: 10px;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    box-shadow: rgba(11, 11, 11, 0.6);
+}
+#access h6{
+    margin-top: 3px;
+    font-size: 13px;
+    letter-spacing:0.1px;
+} 
+#submenu img{
+    height: 100%;
+    width: 100%;
+    margin-top: 40px;
+    
+}
+#submenu{
+    padding: 0px 30px;
+}
+#logo{
+    width: 25%;
+    height: 20%;
+}
+
+header{
+    background: transparent;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 1000;
+}
+header .navbar{
+    position: absolute;
+    right: 100px;
+    top: 100px;
+}
+header .navbar ul{
+    list-style: none;
+    
+}
+header .navbar ul li{
+    position: relative;
+    float: left;
+}
+
+
+
+ 
+header .navbar ul li a{
+    text-decoration: none;
+    font-size: 15px;
+    padding: 0px 12px 0px 0px;
+    display: block;
+    color: black;
+    font-weight: 600;
+    padding-bottom: 40px;
+}
+header .navbar ul li a:hover{
+    color: rgba(0,0,0,0.6);
+    
+}
+header .navbar ul li a i{
+    color: black;
+    font-size: 12px;
+    padding-left: 3px;
+}
+header .navbar ul li ul{
+    position: absolute;
+    top: 45px;
+    left: 0;
+    display: none;
+    border-top:3px solid #ec008b;
+    background-color: white;
+    color: white;
+}
+header .navbar  ul #ser ul{
+    width: 290px;
+}
+#s1{
+    margin-top: 10px;
+}
+header .navbar  ul #NDIS ul{
+    width: 410px;
+}
+header .navbar  ul #gi ul{
+    width: 300px;
+}
+header .navbar  ul #about ul{
+    width: 300px;
+}
+header .navbar ul li ul li{
+    width: 90%;
+    margin: 0px 10px;
+    padding-bottom: 15px;
+}
+header .navbar ul li ul li a{
+    color: black;
+    padding: 5px 20px;
+}
+header .navbar ul li ul li ul{
+    left: 175px;
+    top:0;
+    z-index: 2000;
+}
+header .navbar ul li ul li a:hover{
+    background-color: rgba(145, 138, 138, 0.1);
+}
+
+
+header .navbar ul li:hover > ul{
+    display: initial;
+}  
+#menu-bar{
+    display: none;
+    
+}
+.fa-bars{
+    color: #ec008b;
+    position: absolute;
+    right: 20%;
+    top: 20px;
+    font-size: 20px;
+}
+header label{
+   font-size: 20px; 
+   cursor: pointer;
+   display: none;
+}
+
+
+
+ 
+.button{
+    color: white;
+    background-color: #1D71B8;
+    padding: 15px 25px 12px 15px;
+    border-radius: 5px;
+    border: none;
+    margin-top: -500px;
+    font-weight: bold;
+    box-shadow: 0px 6px 20px rgb(89, 87, 87);
+    font-size: 15px;
+    margin-left:12px;
+    position: relative;
+    top: -15px;
+    text-decoration: none;
+}
+.button i{
+    color: white;
+    padding:5px;
+}
+.navbar #search{
+    padding: 10px;
+    font-size: 20px;
+    position: relative;
+    top: -10px;
+}
+@media(max-width:979px){
+    header{
+        height: 90px;
+        
+    }
+    header label{
+        display: initial;
+    }
+    header .navbar{
+        position: absolute;
+        top: 10%;
+        left: 10%;
+        right: 0;
+        display: none;
+        border-top: 3px solid #ec008b;
+        background-color: #fff;
+        height: fit-content;
+        width:80%;
+    }
+    header .navbar ul li{
+        width: 100%;
+        left: 0px;
+        padding-left: 10px;
+    }
+    header .navbar ul li a{
+        padding: 20px 0px;
+        border-bottom: 1px solid rgba(0,0,0,0.1);
+    }
+    header .navbar ul li ul{
+        position: relative;
+        width:100%;
+        top:0;
+        left: 0px;
+    }
+    header .navbar ul li:focus-within > ul
+    header .navbar ul li:hover > ul{
+        display: initial;
+    } 
+    header .navbar ul li ul li{
+        background: #ffffff;
+        left: -30px;
+        padding-left: 30px;
+        width:94%;
+    }
+    header .navbar ul li ul li ul{
+        width: 100%;
+        left: 0;
+    }
+    #menu-bar:checked ~ .navbar{
+        display: initial;
+    }
+    #logos{
+        display: none;
+    }
+    #access h6{
+        display: none;
+
+    }
+    .button{
+        top: 20px;
+        background: white;
+        border: none;
+        box-shadow: none;
+        color: black;
+        right: 20px;
+    }
+    .button i{
+        color: black;
+
+    }
+    #search{
+        display: none;
+    }
+}
+@media(max-width:430px){
+   #logo img{
+        width: 140px;
+        height: 70px;
+        margin-top: 10px;
+   } 
+}
